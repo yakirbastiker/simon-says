@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;  
+    margin:0 auto;
+    padding:0;
+}
+
+body {
+    background-color: #318BA3;
+    color: #eee;
+}
+
+.container {
+    width: 70%;
+    height: 70%;
+    background-color: #14ABBD;
+    margin-top: 5%;
+    padding: 10px;
+    position: relative;
+}
+
+.grid-hard {
+
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-easy {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:  repeat(2, 1fr);
+    grid-gap: 20px;
+    
+}
+
+p {
+    text-align: center; 
+    font-size: 200%;
+}
+
+#getNum {
+    background: #FFAA00;
+    width: 70%;
+    height: 15%;
+    padding: 20px 250px;
+    border: #FFAA00 solid 1px;
+}
+
+.box {
+    background: #FFAA00;
+    font-size: 20px;
+    padding: 90px;
+    border: #FFAA00 solid 1px;
+    transition: all .2s;
+}
+
+
+.selected {
+    background: #FF3800 !important;
+    border: #FF3800 solid 1px;
+}
+
+.user-selected {
+    background: #318B0B !important;
+    border: #318B0B solid 1px;
+}
+
+
+.difficulty {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    color: #eee;
+    text-transform: capitalize;
+    transition: all .3s;
+    font-size: 1.5em;
+}
+
+span {
+    cursor: pointer;
+}
+
+span:hover {
+    color: #FFAA00;
+}
